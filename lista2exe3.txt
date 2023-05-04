@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LIsta2Exe3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1;
+            int n2;
+            int n3;
+
+            Console.Write("insira o Primeiro algarismo: ");
+            n1 = int.Parse(Console.ReadLine());
+
+            Console.Write("insira o Segundo algarismo: ");
+            n2 = int.Parse(Console.ReadLine());
+
+            Console.Write("insira o Terceiro algarismo: ");
+            n3 = int.Parse(Console.ReadLine());
+
+            if (n1 == n2)
+
+                    if (n1 == n3)
+                    Console.WriteLine("Todos os algarismos são iquais.");
+                    else
+                if (n1 > n3)
+                    Console.WriteLine("O Primeiro ({0}) e o Segundo ({1}) são iguais e maiores que o Terceiro({2})",n1, n2, n3);
+                else
+                    Console.WriteLine("O Primeiro ({0}) e o Segundo ({1}) são iguais e menores que o Terceiro({2})", n1, n2, n3);
+            else
+                if (n1 == n3)
+                    if
+                    (n1 > n2)
+                    Console.WriteLine("O Primeiro ({0}) é maior que o Segundo ({1}) e Iqual ao Terceiro ({2})" ,n1, n2, n3);
+                    else
+                    Console.WriteLine("O Primeiro ({0}) é Menor que o Segundo ({1}) e Iqual ao Terceiro ({2})" ,n1, n2, n3);
+                else
+                    if (n1 > n2)
+                          if (n2>n3)
+                        Console.WriteLine("O Primeiro ({0}) é maior de todos, em  seguida o Segundo ({1}) e o Terceiro ({2}) sendo o menor deles.", n1, n2, n3);
+                          else
+                        Console.WriteLine("O Primeiro ({0}) é maior de todos, em  seguida o Terceiro ({2}) e o Segundo ({1}) sendo o menor deles.", n1, n2, n3);
+                    else
+                          if (n1 > n3)                                                        
+                        Console.WriteLine("O Segundo ({1}) é maior de todos, em  seguida o Primeiro ({0}) e o Terceiro ({2}) sendo o menor deles.", n1, n2, n3);
+                          else
+                             if (n2>n3)
+                        Console.WriteLine("O Segundo ({1}) é maior de todos, em  seguida o Terceiro ({2}) e o Primeiro ({0}) sendo o menor deles.",n1, n2, n3);
+                             else
+                        Console.WriteLine("O terceiro ({2}) é maior de todos, em  seguida o Segundo ({1}) e o Primeiro ({0}) sendo o menor deles.",n1, n2, n3);
+            {
+
+            
+            }
+        }
+    }
+}
